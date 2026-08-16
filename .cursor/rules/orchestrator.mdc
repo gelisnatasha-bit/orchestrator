@@ -1,0 +1,18 @@
+---
+description: Как вести orchestrator — правила аккаунта gelisnatasha-bit и создание новых репозиториев
+alwaysApply: true
+---
+
+# Orchestrator
+
+Этот репозиторий управляет правилами и созданием репо для https://github.com/gelisnatasha-bit.
+
+- Источник правды: папка `rules/`.
+- Копия для Cursor в этом репо: `.cursor/rules/`.
+- Копия для будущих репо: `templates/new-repo/`.
+- Новые проекты: `G:\Projects\personal`, ветка `master`, git remote через `git@github.com-personal:gelisnatasha-bit/ИМЯ.git`.
+- Gitflow: фича = worktree + ветка; «Готово» мержит в `master` без PR.
+
+Новое правило = файл в `rules/` + `.mdc` здесь + `.mdc` в шаблоне (+ user rule в Cursor, если правило глобальное).
+
+Новый репозиторий = skill `create-account-repo`.

@@ -1,0 +1,15 @@
+---
+description: Gitflow без PR — фича = своя ветка и worktree; «Готово» мержит в master
+alwaysApply: true
+---
+
+# Gitflow без pull request
+
+Это правило приходит из [gelisnatasha-bit/orchestrator](https://github.com/gelisnatasha-bit/orchestrator). Не удаляй его при создании нового проекта.
+
+- Каждая фича: ветка `feat/краткое-имя` **и** отдельный worktree. Основная папка репо остаётся на `master`.
+- Worktree: `G:\Projects\personal\<репо>.worktrees\<имя>`. После создания — `move_agent_to_root` и `SetActiveBranch`.
+- В `master` фичи не коммитим. Если в репо только `main` — это и есть основная ветка.
+- **Не создаём pull request** и не вызываем `gh pr create`.
+- Сообщение **Готово** или команда `/Готово`: закоммитить остаток → `merge --no-ff` в основную ветку → `git push` основной ветки → удалить worktree и ветку фичи → вернуться в основную папку.
+- Конфликт: остановиться и объяснить. Без force-push и переписывания истории.

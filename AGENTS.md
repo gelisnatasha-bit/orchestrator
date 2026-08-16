@@ -6,6 +6,7 @@
 
 - Следуй правилу технического уровня: подробные объяснения простыми словами (`rules/technical-level.md`).
 - Gitflow без PR: фича = ветка `feat/…` и worktree; «Готово» / `/Готово` мержит в `master` (`rules/gitflow.md`). Не создавай pull request.
+- Код комментируй и документируй: зачем нужен кусок, что делают функции, README у модулей (`rules/code-comments.md`).
 - Общие правила живут здесь. Новые репозитории этого аккаунта получают копию из `templates/new-repo/` (включая `.cursor/rules`, `.cursor/commands`, `.cursor/skills`).
 - Новые проекты создавай в `G:\Projects\personal`, не на диске C. Основная ветка новых репо — `master`.
 - Для клонирования и push используй SSH-хост `github.com-personal` (личный ключ), например: `git@github.com-personal:gelisnatasha-bit/ИМЯ.git`.

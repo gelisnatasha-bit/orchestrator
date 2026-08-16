@@ -13,3 +13,4 @@
 |---|---------|------|
 | 1 | [technical-level.md](technical-level.md) | Подробные объяснения простыми словами |
 | 2 | [gitflow.md](gitflow.md) | Фича = ветка + worktree; «Готово» мержит в master, без PR |
+| 3 | [code-comments.md](code-comments.md) | Весь код комментировать и документировать |
